@@ -8,11 +8,11 @@ if (module.hot) {
   console.info('✅  Server-side HMR Enabled!')
 }
 
-const port = process.env.PORT || 8000
+const port = 8000
 
 export default express()
   .use((req, res) => app.handle(req, res))
-  .listen(port, function(err) {
+  .listen(port, (err) => {
     if (err) {
       console.error(err);
       return;
