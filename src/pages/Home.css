@@ -1,0 +1,43 @@
+.Home {
+}
+
+.Home-hero {
+  position: relative;
+}
+
+.Home-heading {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+    right: 0;
+    bottom: 35%;
+    left: 0;
+  text-align: center;
+}
+
+.Home-hero-cta {
+  background: #63AECF;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 1.25rem;
+  margin-left: -6em;
+  padding: .66em;
+  position: absolute;
+    left: 50%;
+    bottom: 15%;
+  text-align: center;
+  text-decoration: none;
+  width: 12em;
+}
+
+.Home-hero-image {
+  width: 100%;
+}
+
+@media (min-width: 60rem) {
+  .Home-heading {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,50 @@
+:root {
+  --red400: #E87255;
+  --orange400: #E9A448;
+  --pink400: #DB5172;
+  --purple400: #A079C0;
+  --cornflower400: #63AECF;
+  --green400: #C1B54C;
+  --offwhite: #F4F4F1;
+  --gray400: #82969B;
+
+  --mutedColor200: #282828;
+  --mutedColor300: #424242;
+  --mutedColor400: #666666;
+  --mutedColor500: #888;
+  --mutedColor600: #a0a0a0;
+  --mutedColor700: #c2c2c2;
+  --mutedColor800: #e0e0e0;
+  --mutedColor900: #f8f8f8;
+}
+
+@custom-media --small (min-width: 30rem);
+@custom-media --medium (min-width: 45rem);
+@custom-media --large (min-width: 60rem);
+@custom-media --xlarge (min-width: 90rem);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App-container {
+  margin: 0 auto;
+  max-width: 87.5rem;
+}
+
+.App-bodyCopy p,
+.App-bodyCopy h1 {
+  max-width: 40rem;
+}
+
+.App-bodyCopy p {
+  line-height: 1.4em;
+}
+
+@media (min-width: 48rem) {
+  .App-bodyCopy {
+    margin: 0 2rem 0 4rem;
+  }
+}
