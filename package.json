@@ -3,24 +3,22 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=production node build/server.js",
-    "postinstall": "razzle build",
+    "start": "node build/server.js",
+    "postinstall": "yarn run build",
     "dev": "razzle start",
     "build": "razzle build"
   },
   "dependencies": {
     "express": "^4.15.2",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.0.1",
+    "postcss-import": "^10.0.0",
+    "postcss-nesting": "^4.0.0",
     "prop-types": "^15.5.10",
     "razzle": "latest",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0"
-  },
-  "devDependencies": {
-    "postcss-cssnext": "^2.11.0",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.0.1",
-    "postcss-import": "^10.0.0",
-    "postcss-nesting": "^4.0.0"
   }
 }
