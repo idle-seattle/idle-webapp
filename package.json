@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start": "node build/server.js",
+    "start": "NODE_ENV=production node build/server.js",
     "postinstall": "razzle build",
     "dev": "razzle start",
     "build": "razzle build"
