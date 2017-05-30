@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=production node build/server.js",
-    "postinstall": "npm run build",
+    "postinstall": "razzle build",
     "dev": "razzle start",
     "build": "razzle build"
   },
