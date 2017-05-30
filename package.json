@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node build/server.js",
-    "postinstall": "yarn run build",
     "dev": "razzle start",
-    "build": "razzle build"
+    "build": "razzle build",
+    "heroku-postbuild": "rm -rf build"
   },
   "dependencies": {
     "express": "^4.15.2",
