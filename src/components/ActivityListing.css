@@ -6,6 +6,7 @@
 
 .ActivityListing-link {
   color: inherit;
+  display: block;
   text-decoration: none;
 }
 

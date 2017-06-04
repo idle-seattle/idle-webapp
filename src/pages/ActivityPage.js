@@ -25,6 +25,7 @@ class ActivityPage extends Component {
         <div className="App-bodyCopy">
           <h1>{activity.title}</h1>
           <div>{activity.neighborhood} • {activity.grade}</div>
+          { activity.website && <div><Link to={activity.website} target="_new">Website</Link></div>}
           <div dangerouslySetInnerHTML={this.renderDescription()} />
         </div>
       </main>
