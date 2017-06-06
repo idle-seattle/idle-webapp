@@ -22,3 +22,7 @@ Run the app in dev mode:
 ```bash
 yarn run dev
 ```
+
+## Deployment
+
+During development, a public instance of this app is available on Heroku. Commits to `master` trigger a rebuild.
