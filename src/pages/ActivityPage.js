@@ -39,26 +39,19 @@ class ActivityPage extends Component {
 
   render = () => {
     return (
-      <h1>Title is {this.state.activity.title}</h1>
-    )
-/*
-    return (
-
       <main className="App-container">
         <article className="App-bodyCopy">
           <header className="App-pageHeader ActivityPage-pageHeader">
             <Link to='/activities'>Back</Link>
             <img src="https://placeimg.com/800/480/tech" className="ActivityPage-headerImage" />
-            <h1 className="App-pageTitle">{activity.title}</h1>
-            <div>{activity.neighborhood} • {activity.grade}</div>
-            { activity.website && <div><a href={activity.website}>Website</a></div>}
+            <h1 className="App-pageTitle">{this.state.activity.title}</h1>
+            <div>{this.state.activity.neighborhood} • {this.state.activity.grade}</div>
+            { this.state.activity.website && <div><a href={this.state.activity.website}>Website</a></div>}
           </header>
-          <div dangerouslySetInnerHTML={this.renderDescription()} />
+{/*          <div dangerouslySetInnerHTML={this.renderDescription()} /> */}
         </article>
       </main>
     )
-
-    */
   }
 }
 
