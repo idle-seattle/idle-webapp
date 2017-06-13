@@ -1,0 +1,9 @@
+.ActivityPage-pageHeader {
+  margin: 2rem 0;
+}
+.ActivityPage-headerImage {
+  width: 100%;
+}
+.ActivityPage-pageHeader > .App-pageTitle {
+  margin: 0 0 0 0;
+}

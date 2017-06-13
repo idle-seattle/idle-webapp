@@ -1,0 +1,13 @@
+.Back-button {
+  background: none;
+  border: none;
+}
+.Back-button::before {
+  border-left: .2em solid #e8e8e8;
+  border-bottom: .2em solid #e8e8e8;
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  transform: rotate(45deg);
+}

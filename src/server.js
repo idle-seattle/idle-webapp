@@ -6,12 +6,17 @@ import express from 'express';
 import path from 'path';
 import { renderToString } from 'react-dom/server';
 
+import activityData, { activitySlugs } from './activityData'
+
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
 const server = express();
 server
   .disable('x-powered-by')
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
+  .get('/api/activities', (req, res) => {
+    res.status(200).send(activityData)
+  })
   .get('/*', (req, res) => {
     const context = {};
     const markup = renderToString(
