@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 import BackButton from '../components/BackButton'
-import activityData, { activitySlugs } from '../activityData'
 
 import './ActivityPage.css'
 
@@ -10,19 +10,40 @@ class ActivityPage extends Component {
 
   constructor(props) {
     super(props)
+    let activity
+    axios.get('/api/activities/')
+      .then( (response) => {
+        console.log(response.data[this.props.match.params.slug])
+        this.setState({
+          activity: response.data[this.props.match.params.slug]
+        })
+      })
+      .catch( (error) => {
+        console.error(error)
+      })
+    this.state = {
+      activity: {}
+    }
   }
 
   componentWillMount = () => {
   }
 
-  renderDescription() {
-    const activity = activityData[this.props.match.params.slug]
-    return {__html: activity.description}
+  componentDidMount = () => {
   }
 
-  render() {
-    const activity = activityData[this.props.match.params.slug]
+  renderDescription = () => {
+//    const activity = this.activityData
+//    return {__html: activity.description}
+  }
+
+  render = () => {
     return (
+      <h1>Title is {this.state.activity.title}</h1>
+    )
+/*
+    return (
+
       <main className="App-container">
         <article className="App-bodyCopy">
           <header className="App-pageHeader ActivityPage-pageHeader">
@@ -36,6 +57,8 @@ class ActivityPage extends Component {
         </article>
       </main>
     )
+
+    */
   }
 }
 
