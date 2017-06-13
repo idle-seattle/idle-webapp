@@ -33,8 +33,7 @@ class ActivityPage extends Component {
   }
 
   renderDescription = () => {
-//    const activity = this.activityData
-//    return {__html: activity.description}
+    return {__html: this.state.activity.description}
   }
 
   render = () => {
@@ -48,7 +47,7 @@ class ActivityPage extends Component {
             <div>{this.state.activity.neighborhood} • {this.state.activity.grade}</div>
             { this.state.activity.website && <div><a href={this.state.activity.website}>Website</a></div>}
           </header>
-{/*          <div dangerouslySetInnerHTML={this.renderDescription()} /> */}
+          <div dangerouslySetInnerHTML={this.renderDescription()} />
         </article>
       </main>
     )
