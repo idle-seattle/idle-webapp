@@ -9,6 +9,7 @@
     "heroku-postbuild": "rm -rf build"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "express": "^4.15.2",
     "postcss-cssnext": "^2.11.0",
     "postcss-custom-media": "^6.0.0",
