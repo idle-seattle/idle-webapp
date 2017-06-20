@@ -33,6 +33,7 @@ class ActivityPage extends Component {
             { activity.website && <div><a href={activity.website}>Website</a></div>}
           </header>
           <div dangerouslySetInnerHTML={this.renderDescription()} />
+          <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Seattle,WA&zoom=13&size=600x300&maptype=roadmap&scale=2&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ActivityPage-mapImage" />
         </article>
       </main>
     )
