@@ -1,5 +1,8 @@
 .ActivityPage-pageHeader {
-  margin: 2rem 0;
+  margin: .5rem 0 2rem;
+}
+.ActivityPage-pageHeader .App-backButton {
+  padding: 1rem 1rem 1rem 0;
 }
 .ActivityPage-headerImage {
   width: 100%;

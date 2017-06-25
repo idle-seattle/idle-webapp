@@ -27,7 +27,7 @@ class ActivityPage extends Component {
       <main className="App-container">
         <article className="App-bodyCopy">
           <header className="App-pageHeader ActivityPage-pageHeader">
-            <Link to='/activities'>Back</Link>
+            <Link to='/activities' className="App-backButton">Back</Link>
             <img src="https://placeimg.com/800/480/tech" className="ActivityPage-headerImage" />
             <h1 className="App-pageTitle">{activity.title}</h1>
             <div>{activity.neighborhood} • {activity.grade}</div>

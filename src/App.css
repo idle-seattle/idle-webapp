@@ -52,6 +52,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4em;
 }
 
+.App-backButton {
+  color: #E9A448;
+  display: block;
+  text-decoration: none;
+}
+
+.App-backButton::before {
+  border-left: .125em solid #E9A448;
+  border-bottom: .125em solid #E9A448;
+  content: '';
+  display: inline-block;
+  height: .5em;
+  width: .5em;
+  transform: rotate(45deg);
+}
+
 @media (min-width: 48rem) {
   .App-bodyCopy {
     margin: 0 2rem 0 4rem;
