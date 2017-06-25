@@ -11,5 +11,15 @@
   display: block;
   float: left;
   margin: .5rem 0 .5rem .5rem;
-  width: 200px;
+  width: 150px;
+}
+
+.Header-logo > img {
+  width: 100%;
+}
+
+@media (min-width: 30rem) {
+  .Header-logo {
+    width: 250px;
+  }
 }
