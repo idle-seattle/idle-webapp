@@ -5,6 +5,10 @@ export const activityData = {
     grade: "All Ages and Grades",
     description: `<p>Seattle CoderDojo is a free computer programming club for children 8-18. We are supported by sponsors and run by volunteers.</p>`,
     website: 'http://www.seattlecoderdojo.com/',
+    address1: '535 Terry Ave. N.',
+    city: 'Seattle',
+    state: 'WA',
+    zip: 98109,
   },
   "microsoft-youthspark": {
     title: "Microsoft YouthSpark Program",
@@ -12,6 +16,10 @@ export const activityData = {
     grade: "All Ages and Grades",
     description: `<p>Would you like to run a YouthSpark Camp at your nonprofit organization? Download our YouthSpark Camp content including the leader guide, PowerPoint, participant handbook and certificate and start teaching coding camps today.</p>`,
     website: 'https://www.microsoft.com/about/philanthropies/youthspark/youthsparkhub/programs/studentprograms',
+    address1: '2624 NE University Village Street',
+    city: 'Seattle',
+    state: 'WA',
+    zip: 98105,
   },
   "after-school-robotics-program": {
     title: "After-School Robotics Program",
