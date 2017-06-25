@@ -22,6 +22,7 @@ class ActivityPage extends Component {
 
   render() {
     const activity = activityData[this.props.match.params.slug]
+    const addressString = encodeURIComponent(activity.address1 + ', ' + activity.city + ', ' + activity.state + ' ' + activity.zip)
     return (
       <main className="App-container">
         <article className="App-bodyCopy">
@@ -33,7 +34,7 @@ class ActivityPage extends Component {
             { activity.website && <div><a href={activity.website}>Website</a></div>}
           </header>
           <div dangerouslySetInnerHTML={this.renderDescription()} />
-          <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Seattle,WA&zoom=13&size=600x300&maptype=roadmap&scale=2&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ActivityPage-mapImage" />
+          { activity.address1 && <img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ActivityPage-mapImage" /> }
         </article>
       </main>
     )

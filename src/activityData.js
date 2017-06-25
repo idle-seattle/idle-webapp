@@ -7,6 +7,7 @@ export const activityData = {
     website: 'http://www.seattlecoderdojo.com/',
     address1: '535 Terry Ave. N.',
     city: 'Seattle',
+    state: 'WA',
     zip: 98109,
   },
   "microsoft-youthspark": {
@@ -17,6 +18,7 @@ export const activityData = {
     website: 'https://www.microsoft.com/about/philanthropies/youthspark/youthsparkhub/programs/studentprograms',
     address1: '2624 NE University Village Street',
     city: 'Seattle',
+    state: 'WA',
     zip: 98105,
   },
   "after-school-robotics-program": {
