@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import { programAddressToString } from '../util'
 
 import './ActivityListing.css'
 
@@ -10,12 +11,14 @@ class ActivityListing extends Component {
   }
 
   render() {
-    const { slug, title, neighborhood, address, grade, website, phone } = this.props
+    const { slug, activity } = this.props
+    const addressString = programAddressToString(activity)
     return (
       <article className="ActivityListing">
+        {/* <img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ActivityPage-mapImage" /> */}
         <Link to={`/activity/${slug}`} className="ActivityListing-link">
-          <h3 className="ActivityListing-title">{title}</h3>
-          {neighborhood} • {grade}
+          <h3 className="ActivityListing-title">{activity.title}</h3>
+          {activity.neighborhood} • {activity.grade}
         </Link>
       </article>
     )
@@ -24,13 +27,8 @@ class ActivityListing extends Component {
 }
 
 ActivityListing.PropTypes = {
-  slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  neighborhood: PropTypes.string,
-  address: PropTypes.string,
-  grade: PropTypes.string,
-  website: PropTypes.string,
-  phone: PropTypes.string,
+  activity: PropTypes.object,
+  slug: PropTypes.string,
 }
 
 export default ActivityListing
