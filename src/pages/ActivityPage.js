@@ -27,14 +27,13 @@ class ActivityPage extends Component {
       <main className="App-container">
         <article className="App-bodyCopy">
           <header className="App-pageHeader ActivityPage-pageHeader">
-            <Link to='/activities' className="App-backButton">Back</Link>
-            <img src="https://placeimg.com/800/480/tech" className="ActivityPage-headerImage" />
+            <Link to='/' className="App-backButton">Back</Link>
+            { activity.address1 && <a href={`https://www.google.com/maps/place/${addressString}`} target="_new"><img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ActivityPage-mapImage" /></a> }
             <h1 className="App-pageTitle">{activity.title}</h1>
             <div>{activity.neighborhood} • {activity.grade}</div>
-            { activity.website && <div><a href={activity.website}>Website</a></div>}
+            { activity.website && <div><a href={activity.website} target="_new">Website</a></div>}
           </header>
           <div dangerouslySetInnerHTML={this.renderDescription()} />
-          { activity.address1 && <a href={`https://www.google.com/maps/place/?q=${addressString}`}><img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ActivityPage-mapImage" /></a> }
         </article>
       </main>
     )
