@@ -5,14 +5,14 @@ import './App.css'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
-import ActivityPage from './pages/ActivityPage'
+import ProgramPage from './pages/ProgramPage'
 
 const App = () => (
   <Switch>
     <Layout>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/activity/:slug" component={ActivityPage} />
+      <Route path="/program/:slug" component={ProgramPage} />
     </Layout>
   </Switch>
 )

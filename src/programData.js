@@ -1,4 +1,4 @@
-export const activityData = {
+export const programData = {
   "seattle-coderdojo": {
     title: "Seattle CoderDojo",
     neighborhood: "South Lake Union",
@@ -33,7 +33,7 @@ export const activityData = {
   }
 }
 
-export const activitySlugs = []
-Object.keys(activityData).map((item) => activitySlugs.push(item))
+export const programSlugs = []
+Object.keys(programData).map((item) => programSlugs.push(item))
 
-export default activityData
+export default programData

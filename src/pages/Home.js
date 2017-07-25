@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import activityData, { activitySlugs } from '../activityData'
-import ActivityListing from '../components/ActivityListing'
+import programData, { programSlugs } from '../programData'
+import ProgramListing from '../components/ProgramListing'
 
 import './Home.css'
 
@@ -18,10 +18,10 @@ class Home extends Component {
           <section className="Home-programs">
             <h2 className="Home-programs-title">Programs near us</h2>
             <div className="Home-programsList">
-              { activitySlugs.map((slug) => {
-                const activity = activityData[slug]
-                return <ActivityListing
-                          activity={activity}
+              { programSlugs.map((slug) => {
+                const program = programData[slug]
+                return <ProgramListing
+                          program={program}
                           key={slug}
                           slug={slug}
                         />
