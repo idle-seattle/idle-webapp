@@ -16,9 +16,9 @@
     "postcss-import": "^10.0.0",
     "postcss-nesting": "^4.0.1",
     "prop-types": "^15.5.10",
-    "razzle": "^0.7.2",
+    "razzle": "^0.7.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.2"
   }
 }
