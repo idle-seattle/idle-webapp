@@ -1,0 +1,15 @@
+.ProgramPage-pageHeader {
+  margin: .5rem 0 2rem;
+}
+.ProgramPage-pageHeader .App-backButton {
+  padding: 1rem 1rem 1rem 0;
+}
+.ProgramPage-headerImage {
+  width: 100%;
+}
+.ProgramPage-mapImage {
+  width: 100%;
+}
+.ProgramPage-pageHeader > .App-pageTitle {
+  margin: 0 0 0 0;
+}

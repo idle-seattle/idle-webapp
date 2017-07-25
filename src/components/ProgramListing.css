@@ -1,4 +1,4 @@
-.ActivityListing-link {
+.ProgramListing-link {
   box-sizing: border-box;
   color: inherit;
   display: block;
@@ -7,17 +7,17 @@
   width: 100%;
 }
 
-.ActivityListing-title {
+.ProgramListing-title {
   font-size: 1.25em;
   margin: 0 0 .125em 0;
 }
 @media (min-width: 27rem) {
-  .ActivityListing {
+  .ProgramListing {
     width: 50%;
   }
 }
 @media (min-width: 43rem) {
-  .ActivityListing {
+  .ProgramListing {
     width: 33%;
   }
 }
