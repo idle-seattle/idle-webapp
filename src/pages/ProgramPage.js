@@ -31,7 +31,7 @@ class ProgramPage extends Component {
         <article className="App-bodyCopy">
           <header className="App-pageHeader ProgramPage-pageHeader">
             <Link to='/' className="App-backButton">Back</Link>
-            { program.address1 && <a href={`https://www.google.com/maps/place/${addressString}`} target="_new"><img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="programPage-mapImage" /></a> }
+            { program.address1 && <a href={`https://www.google.com/maps/place/${addressString}`} target="_new"><img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ProgramPage-mapImage" /></a> }
             <h1 className="App-pageTitle">{program.title}</h1>
             <div className={`App-color-${Util.stringToClassName(program.category)}`}>{program.category}</div>
             <div>{program.neighborhood} • {program.grade}</div>
