@@ -1,20 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import BackButton from '../components/BackButton'
-import programData, { programSlugs } from '../programData'
+import programData from '../programData'
 import * as Util from '../util'
 
 import './ProgramPage.css'
 
 class ProgramPage extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-
-  componentWillMount = () => {
-  }
 
   renderDescription() {
     const program = programData[this.props.match.params.slug]
@@ -31,7 +23,7 @@ class ProgramPage extends Component {
         <article className="App-bodyCopy">
           <header className="App-pageHeader ProgramPage-pageHeader">
             <Link to='/' className="App-backButton">Back</Link>
-            { program.address1 && <a href={`https://www.google.com/maps/place/${addressString}`} target="_new"><img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ProgramPage-mapImage" /></a> }
+            { program.address1 && <a href={`https://www.google.com/maps/place/${addressString}`} target="_new"><img src={`https://maps.googleapis.com/maps/api/staticmap?center=${addressString}&zoom=13&size=600x300&maptype=roadmap&scale=2&markers=color:green%7C${addressString}&key=${process.env.RAZZLE_GOOGLE_MAPS_KEY}`} className="ProgramPage-mapImage" alt="map" /></a> }
             <h1 className="App-pageTitle">{program.title}</h1>
             <div className={`App-color-${Util.stringToClassName(program.category)}`}>{program.category}</div>
             <div>{program.neighborhood} • {program.grade}</div>

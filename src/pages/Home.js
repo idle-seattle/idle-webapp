@@ -13,7 +13,7 @@ class Home extends Component {
         <div className="App-container">
           <section className="Home-hero">
             <h1 className="Home-heading">Equipping students of color to become Seattle-ready innovators.</h1>
-            <img className="Home-hero-image" src="/hero-image-placeholder.jpg" alt="Placeholder image" />
+            <img className="Home-hero-image" src="/hero-image-placeholder.jpg" alt="Placeholder" />
           </section>
           <section className="Home-programs">
             <h2 className="Home-programs-title">Programs near us</h2>
@@ -29,7 +29,7 @@ class Home extends Component {
             </div>
           </section>
           <section className="Home-aboutIdle">
-            <img src="/hero-image-placeholder.jpg" className="Home-hero-image" />
+            <img src="/hero-image-placeholder.jpg" className="Home-hero-image" alt="Hero" />
             <Link className="Home-hero-cta" to="/about">The IDLE Seattle Story</Link>
           </section>
         </div>
