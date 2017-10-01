@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const customMedia = require('postcss-custom-media')
 const customProperties = require('postcss-custom-properties')
 const nesting = require('postcss-nesting')
@@ -24,3 +24,4 @@ module.exports = {
     return config
   }
 }
+*/
