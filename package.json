@@ -9,16 +9,16 @@
     "heroku-postbuild": "rm -rf build"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "postcss-cssnext": "^2.11.0",
     "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.2.0",
+    "postcss-custom-properties": "^6.3.1",
     "postcss-import": "^10.0.0",
     "postcss-nesting": "^4.2.1",
-    "prop-types": "^15.6.0",
-    "razzle": "^0.8.7",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "prop-types": "^15.6.1",
+    "razzle": "^0.8.14",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2"
   }
 }
